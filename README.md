@@ -1,0 +1,2 @@
+# myPage
+my blog
