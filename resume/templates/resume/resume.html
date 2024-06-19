@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Sejin Kim</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'assets/img/profile.jpg' %}" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Portfolio</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        SEJIN
+                        <span class="text-primary">KIM</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        email ·
+                        <a href="mailto:sejin.kim@gmail.com">sejinkim.dev@gmail.com</a>
+                    </div>
+                    <p class="lead mb-5">안녕하세요. 웹 백엔드 개발자로 이직을 희망하는 김세진 입니다.<br>현재 오토소프트라는 회사에서 네비게이션 sw 개발 업무를 맡고 있습니다.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/notifications/?filter=all"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/halmango"><i class="fab fa-github"></i></a>
+                        <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Micom Dev</h3>
+                            <div class="subheading mb-3">Autosoft, 사원</div>
+                            <p><b>회로도와 핀맵을 분석하고 제품에 쓰이는 IC의 데이터 시트와 드라이버, C언어로 작성된 샘플 코드를 분석하여 요구사항에 따라 기능 개발</b></p>
+                            <p><b>3D Display</b>&nbsp;&nbsp;차량에 들어가는 네비게이션을 대상으로 개발, thermistor, hibernate 상태에서 wake-up, 듀얼 뱅크 상태에서 bank switch 등 관련 테스트 코드 작성</p>
+                            <p><b>8'Inch Knob On Display(KOD)</b>&nbsp;&nbsp;8인치 디스플레이에 knob 가 부착된 네이베기션 제품으로, 이전 버전의 제품에서 업그레이드 된 모듈들에 맞춰 기존 코드를 수정하는 작업을 함, 터치와 햅틱 모듈 위주의 코드 작성 및 테스트 코드 작성</p>
+                            <p><b>15'Inch Knob On Display(KOD)</b>&nbsp;&nbsp;15인치 디스플레이에 knob 가 부착된 네이베기션 제품으로, PC로부터 햅틱 동작 command를 받는 제품 특성상 테스트를 위해 Python으로 PC 프로그램을 제작</p>
+                            <p><b>SWDR</b>&nbsp;&nbsp;QAC, 코드소나를 통해 검출된 룰 위반 코드에 대하여 룰 위반 근거를 들어 정당화 반려, 정당화 요청이 온 건에 대해 해당 구문이 룰을 위반했어도 크게 문제 되지 않거나 수정 시 더 심각한 오류를 발생시킬 위험이 있다고 판단되면 정당화 승인</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2023 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">V&V, GS 인증 시험</h3>
+                            <div class="subheading mb-3">TTA, 연구원</div>
+                            <p><b>V&V 시험</b>&nbsp;&nbsp;V&V 시험 신청 제품을 대상으로 업체에서 작성한 테스트 방법에 따라 테스트를 진행, 테스트가 목적에 맞는지, 해당 테스트로 목표한 결과가 나왔는지, 결과 값이 목표를 달성하는지 등을 확인하고, 테스트 결과에 대한 문서 작성</p>
+                            <p><b>GS 인증 시험</b>&nbsp;&nbsp;GS 인증 시험 신청 제품을 대상으로 품질 특성에 따른 결함을 찾아 결과를 문서화, 패치 후의 결함이 정상적으로 개선되었는지 확인하고 문서화</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2022 - June 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"></h3>
+                            <div class="subheading mb-3"></div>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">한국폴리텍 제2대학 인천캠퍼스, 2년제</h3>
+                            <div class="subheading mb-3">메카트로닉스과</div>
+                            <div>Python, C#, C 프로그래밍 언어와<br>회로 이론, 로봇 제어, 윈도우폼 프로그램 작성, 아두이노, PLC 프로그램 개발, 기계공작법 등을 공부했습니다.</div>
+                            <p>최종학점: 4.39</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2021 - February 2023</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        <!-- <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li> -->
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-solid fa-c"></i>
+                        <i class="fa-solid fa-c"></i>#
+                        <i class="fa-brands fa-unity"></i>
+                        <i class="fa-brands fa-linux"></i>
+                        <i class="fa-brands fa-git"></i>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p><b>웹 개발</b><br>Django 프레임워크로 웹 개발하는 것에 관심이 있어요.<br>Django의 훌륭한 장점들과 Python이라는 쉬운 언어를 통해 빠른 개발을 할 수 있다는 점에 많은 기업들이 흥미를 느끼고 더 많은 웹 제품이 Django로 만들어졌으면 합니다.</p>
+                    <!--<p class="mb-0">게임 개발</p>-->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Portfolio -->
+            <!--
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Portfolio</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fa-solid fa-link"></i></span>
+                            Sejin's Blog : #url#
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
