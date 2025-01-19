@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'demoApp', # 배포용 데모 앱
+    'resume', # 이력서 페이지
 ]
 
 MIDDLEWARE = [
