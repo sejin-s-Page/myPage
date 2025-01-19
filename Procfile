@@ -1,0 +1,1 @@
+web: gunicorn myPagePrj.wsgi --log-file -
