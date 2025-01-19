@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'demoApp', # 배포용 데모 앱
 ]
 
 MIDDLEWARE = [
