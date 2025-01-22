@@ -19,6 +19,7 @@ from django.urls import include, path
 
 urlpatterns = [
     path('demoApp/', include('demoApp.urls')), # 배포용 데모 앱
-    path('', include('resume.urls')),
+    path('', include('resume.urls')), # 이력서 페이지
+path('blog/', include('blog.urls')), # blog 페이지
     path('admin/', admin.site.urls),
 ]
