@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+import environ
+
+env = environ.Env(DEBUG=(bool, True))
+environ.Env.read_env(env_file=".env")
 
 urlpatterns = [
     path('demoApp/', include('demoApp.urls')), # 배포용 데모 앱
     path('', include('resume.urls')), # 이력서 페이지
-path('blog/', include('blog.urls')), # blog 페이지
-    path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')), # blog 페이지
+    path(env('DJANGO_PROD_ADMIN_PAGE_URL'), admin.site.urls),
 ]
