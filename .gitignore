@@ -3,3 +3,4 @@
 resume_template
 blog_template
 .DS_Store
+.env
