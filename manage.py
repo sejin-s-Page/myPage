@@ -7,10 +7,7 @@ import django.conf
 
 def main():
     """Run administrative tasks."""
-    try:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myPagePrj.settings.dev')
-    except:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myPagePrj.settings.prod')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myPagePrj.settings.prod')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

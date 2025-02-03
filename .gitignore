@@ -4,4 +4,4 @@ resume_template
 blog_template
 .DS_Store
 .env
-.github/workflow/application.yaml
+.github/workflows/application.yaml
