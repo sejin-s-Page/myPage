@@ -16,6 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static
+from django.conf import settings
+
 import environ
 
 env = environ.Env(DEBUG=(bool, True))
@@ -25,5 +28,8 @@ urlpatterns = [
     path('demoApp/', include('demoApp.urls')), # 배포용 데모 앱
     path('', include('resume.urls')), # 이력서 페이지
     path('blog/', include('blog.urls')), # blog 페이지
+    path('ckeditor5/', include('django_ckeditor_5.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
     path(env('DJANGO_PROD_ADMIN_PAGE_URL'), admin.site.urls),
 ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
