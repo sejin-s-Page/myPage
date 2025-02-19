@@ -17,3 +17,6 @@ DATABASES = {
         'NAME': BASE_DIR / env('DJANGO_PROD_DB_NAME'),
     }
 }
+
+# Define a constant in settings.py to specify file upload permissions
+CKEDITOR_5_FILE_UPLOAD_PERMISSION = env('CKEDITOR_UPLOAD_PERMISSION')

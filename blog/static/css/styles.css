@@ -170,8 +170,10 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  -webkit-text-decoration: none dotted;
+          text-decoration: none dotted;
+  /*-webkit-text-decoration: underline dotted;*/
+  /*      text-decoration: underline dotted;*/
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -10566,7 +10568,7 @@ p {
   margin: 2rem 0;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none /*underline*/;
 }
 
 blockquote {
