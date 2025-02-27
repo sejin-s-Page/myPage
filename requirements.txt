@@ -3,7 +3,7 @@ dj-database-url==2.3.0
 Django==5.1.6
 django-allauth==65.4.1
 django-ckeditor==6.7.2
-django-ckeditor-5==0.2.16
+django-ckeditor-5>=0.2.16
 django-environ==0.12.0
 django-heroku==0.3.1
 django-js-asset==3.0.1
