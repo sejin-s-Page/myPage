@@ -20,3 +20,4 @@ DATABASES = {
 
 # Define a constant in settings.py to specify file upload permissions
 CKEDITOR_5_FILE_UPLOAD_PERMISSION = env('CKEDITOR_UPLOAD_PERMISSION')
+CSRF_TRUSTED_ORIGINS = env('DJANGO_PROD_CSRF_TRUSTED_ORIGINS')
