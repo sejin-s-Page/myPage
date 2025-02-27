@@ -15,7 +15,7 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
-# @login_required
+@login_required
 def post_create(request):
     if request.method == 'POST':
         post_form = BlogPost(request.POST)
