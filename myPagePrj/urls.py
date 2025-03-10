@@ -30,6 +30,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')), # blog 페이지
     path('ckeditor5/', include('django_ckeditor_5.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path(env('DJANGO_PROD_ADMIN_PAGE_URL'), admin.site.urls),
+    path('admin/', admin.site.urls),
+    # path(env('DJANGO_PROD_ADMIN_PAGE_URL'), admin.site.urls),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
