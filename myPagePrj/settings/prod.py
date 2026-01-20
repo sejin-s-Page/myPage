@@ -1,5 +1,6 @@
 from .base import *
 import environ
+from . import CSRF_trust
 
 env = environ.Env(DEBUG=(bool, True))
 environ.Env.read_env(env_file=".env")
@@ -20,6 +21,4 @@ DATABASES = {
 
 # Define a constant in settings.py to specify file upload permissions
 CKEDITOR_5_FILE_UPLOAD_PERMISSION = env('CKEDITOR_UPLOAD_PERMISSION')
-CSRF_TRUSTED_ORIGINS = env.list('DJANGO_PROD_CSRF_TRUSTED_ORIGINS')
-CORS_ORIGIN_WHITELIST = env.list('DJANGO_PROD_CSRF_TRUSTED_ORIGINS')
-CSRF_COOKIE_DOMAIN = env.list('DJANGO_PROD_CSRF_COOKIE_DOMAIN')
+CSRF_TRUSTED_ORIGINS = [CSRF_trust.get_ipaddress()]
