@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'blog', # 블로그
     'django_ckeditor_5', # ckeditor
     'ckeditor_uploader',
-    'accounts', # login
+    # 'accounts', # login
 ]
 
 MIDDLEWARE = [
