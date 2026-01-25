@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'demoApp', # 배포용 데모 앱
     'resume', # 이력서 페이지
     'blog', # 블로그
+    'accounts',
     'django_ckeditor_5', # ckeditor
     'ckeditor_uploader',
 ]
